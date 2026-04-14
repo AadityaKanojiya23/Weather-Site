@@ -69,7 +69,6 @@ button:hover{
 .hidden{
     display: none;
 }
-
 #error-message{
     color: #ff5722;
     margin-top: 20px;
