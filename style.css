@@ -1,76 +1,119 @@
-/*Style.css*/
-
+/* Reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Soft dark background (no eye strain) */
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #121212;
-    color: #ffff;
+    font-family: 'Segoe UI', sans-serif;
+    background: url("https://ubuntuhandbook.org/wp-content/uploads/2021/07/M-Maggs-pixabay.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
+
 .container{
-    background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-    width: 400px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.08); 
+    backdrop-filter: blur(20px); 
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 30px;
+    border-radius: 20px;
+    width: 420px;
     text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
 }
+
+.container:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
 
 h1{
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 26px;
+    letter-spacing: 1px;
 }
+
 
 .input-container{
     display: flex;
     justify-content: center;
-    margin-bottom: 2px;
+    margin-bottom: 15px;
 }
+
 
 input[type="text"]{
     width: 70%;
-    padding: 10px;
-    background-color: #333333;
-    border: none;
-    border-radius: 5px;
-    color: #ffff;
-    outline: none
+    padding: 12px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
 }
+
+
+input[type="text"]:focus{
+    border-color: #4facfe;
+    box-shadow: 0 0 8px rgba(79,172,254,0.7);
+}
+
 
 button{
-    width: 100px;
-    padding: 10px;
+    width: 110px;
+    padding: 12px;
     margin-left: 10px;
-    background-color: #6200ea;
+    background: rgba(79,172,254,0.8);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     color: #fff;
     cursor: pointer;
-    transition: backgroung-color 0.3s;
+    transition: 0.3s;
 }
 
+
 button:hover{
-    background-color: #370083;
+    background: rgba(79,172,254,1);
+    transform: scale(1.05);
 }
+
 
 #weather-info{
     margin-top: 20px;
+    animation: fadeIn 0.5s ease;
 }
+
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .hidden{
     display: none;
 }
-#error-message{
-    color: #ff5722;
-    margin-top: 20px;
-}
 
+#error-message{
+    color: #ff6b6b;
+    margin-top: 20px;
+    font-weight: bold;
+}
