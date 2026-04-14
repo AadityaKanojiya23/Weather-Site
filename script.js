@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded' , ()=>{
    const cityInput = document.getElementById("city-input");
-   const getWeatherbtn = document.getElementById("get-wether-btn");
+   const getWeatherbtn = document.getElementById("get-weather-btn");
    const weatherInfo = document.getElementById("weather-info");
    const cityNameDisplay = document.getElementById("city-name");
    const temperatureDisplay = document.getElementById("temperature");
@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded' , ()=>{
         
    }
 
-   function showError(){
-        weatherInfo.classList.remove('hidden')
-        errorMessage.classList.add('hidden')
-   }
+     function showError(){
+     weatherInfo.classList.add('hidden')   
+     errorMessage.classList.remove('hidden') 
+     }
 })
