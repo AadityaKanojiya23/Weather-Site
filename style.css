@@ -1,11 +1,11 @@
-/* Reset */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Soft dark background (no eye strain) */
+
 body{
     font-family: 'Segoe UI', sans-serif;
     background: url("https://ubuntuhandbook.org/wp-content/uploads/2021/07/M-Maggs-pixabay.jpg");
