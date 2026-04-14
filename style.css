@@ -1,11 +1,8 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
 body{
     font-family: 'Segoe UI', sans-serif;
     background: url("https://ubuntuhandbook.org/wp-content/uploads/2021/07/M-Maggs-pixabay.jpg");
@@ -18,8 +15,6 @@ body{
     align-items: center;
     height: 100vh;
 }
-
-
 .container{
     background: rgba(255, 255, 255, 0.08); 
     backdrop-filter: blur(20px); 
