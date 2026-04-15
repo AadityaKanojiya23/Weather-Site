@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded' , ()=>{
         errorMessage.classList.add("hidden")
         
    }
-
      function showError(){
      weatherInfo.classList.add('hidden')   
      errorMessage.classList.remove('hidden') 
