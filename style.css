@@ -8,7 +8,7 @@ body{
     background: url("https://wallpaperaccess.com/full/5231197.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     color: #fff;
     display: flex;
     justify-content: center;
